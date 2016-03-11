@@ -1,0 +1,93 @@
+// ==============================================================
+// == Menu
+// ==============================================================
+
+
+// ---------------------------
+// =	Site menu
+// ---------------------------
+//#site-menu
+//  //debug()
+//  -webkit-transition: all 0.3s;
+//  -moz-transition: all 0.3s;
+//  transition: all 0.3s;
+//    
+//  .menu
+//    display block
+//    
+//    +above('m')
+//      text-align center
+//
+//    +above('xl')
+//      display flex
+//      justify-content flex-end
+//      width 100%
+//    
+//  .menu__items
+//    left 0
+//    display block
+//    padding 8px 0
+//    text-align center
+//    border-bottom 1px solid $border-color
+//    
+//    +above('m')
+//      display inline-block
+//      width auto !important // override Responsive Nav js
+//      padding 10px 15px
+//      border-bottom 0
+//    
+//  .menu__link
+//    fs 14px
+//    color $action-color
+//    
+//    &:hover,
+//    &:focus
+//      color $primary-color
+//      
+//    &::last-child
+//      padding-right 0
+//      
+//    +above('m')
+//      margin-top 5px
+//      fs 18px
+//      
+//    +above('xl')
+//      fs 14px
+//      color darken( $darker-gray, 20% )
+//      
+//  .menu__link--current
+//    color $action-color !important
+//    border-bottom 1px solid $action-color
+//    color darken( $font-color, 30% )
+//    
+//// Override Responsive Nav js
+//.nav-toggle
+//  position relative !important
+//  top 0 !important
+//  left 0px !important
+//  margin auto !important
+
+// ---------------------------
+// =	Vertical menu
+// ---------------------------
+.v-menu
+  //debug()
+  width: auto
+	
+  .menu__items
+    display: block
+    position: relative
+    left: 0
+		
+  .menu__link
+    display: block
+    padding: 3px 8px
+    border-bottom: 1px solid $border-color
+			
+    &:hover
+      color: #fff
+      background: $action-color
+				
+  .menu__link--current
+    color: #fff
+    background: $action-color

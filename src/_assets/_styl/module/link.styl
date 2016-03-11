@@ -1,0 +1,54 @@
+// Links
+// =====
+
+
+// Mute link
+// -----
+.link--muted
+  nolinkanimate()
+  color: $muted-color
+	
+  &:hover
+    color: lighten( $font-color, 70% )
+		
+a[muted=muted]
+  color: $muted-color
+	
+  &:hover
+    color: lighten( $font-color, 70% )
+
+// .link--new
+// 	relative()
+// 	padding-right: 15px
+// 	margin-right: 3px
+	
+// .link--new::before
+// 	faIcon()
+// 	absolute: top 7px right 0
+// 	content: $fa-var-external-link
+// 	font-size: 10px
+
+// New tab link
+// add icon to <a target="_blank">
+// -----
+a[target=_blank]
+  relative()
+  padding-right: 15px
+  margin-right: 3px
+	
+  &::before
+    faIcon()
+    absolute: top 7px right 0
+    content: $fa-var-external-link
+    font-size: 10px
+    
+	
+// Disabled link
+// -----
+a[disabled=disabled]
+  color: $muted-color
+  cursor: not-allowed
+	
+  &:hover
+    color: $muted-color
+	

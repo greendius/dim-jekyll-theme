@@ -1,0 +1,71 @@
+// SHARER
+// =====
+
+.sharer
+  //debug()
+  position relative
+  margin $spacing 0
+  padding $small-spacing 0
+  
+  text-align center
+  
+  border-top 1px solid $gray
+  border-bottom 1px solid $gray
+	
+  a
+    display inline-block
+    padding 4px
+    width 35px
+    height 35px
+		
+    text-align center
+		
+    color $darker-gray
+    background #fff
+    
+    border 1px solid $border-color
+    border-radius 2px
+		
+    &::before,
+    &::after
+      display none
+			
+    &:hover,
+    &:focus
+      color #fff
+      background $action-color
+      border-color $action-color
+      
+  .sharer__twitter
+    &:hover
+      background #55acee
+      border-color #55acee
+      
+  .sharer__facebook
+    &:hover
+      background #3b5998
+      border-color #3b5998
+      
+  .sharer__googleplus
+    &:hover
+      background #DC4E41
+      border-color #DC4E41
+      
+  +above('l')
+    position fixed
+    top 35%
+    right 10px
+    
+    border 0
+    
+    &::before,
+    &::after
+      display none
+      
+    a
+      display block
+      margin 5px
+      
+
+      
+      

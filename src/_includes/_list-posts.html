@@ -1,0 +1,18 @@
+<div class="list-post">
+  <ul class="list">
+
+    {% for post in site.categories.test limit:4 %}
+      <li class="list__items">
+        <div class="list__content">
+          <h3><a class="list__url" href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="list__date">{{ post.date | date: "%-d %B %Y" }}</p>
+        </div>
+      </li>
+    {% endfor %}
+
+  </ul>
+</div><!-- /.list-post -->
+
+<div class="centered">
+  <a href="#" class="btn btn--primary btn--large btn--wide btn--rounded">อ่านทั้งหมด</a>
+</div>

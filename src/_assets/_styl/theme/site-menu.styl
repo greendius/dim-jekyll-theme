@@ -1,0 +1,89 @@
+// Site menu
+// =====
+
+#site-menu
+  //debug()
+  clear none !important
+  background #fff
+  
+  +desktop()
+    background transparent
+    border-bottom 0
+    box-shadow none
+
+  .menu
+    padding 15px 0
+    width 100%
+    
+    +tablet()
+      margin-top 15px
+      padding 10px 0
+      text-align center
+    
+    +desktop()
+      overflow hidden
+      padding 12px 0
+      text-align right
+      
+  .menu__items
+    display block
+    left 0
+    padding 5px 10px
+    text-align center
+    
+    +tablet()
+      display inline-block
+      padding 0 10px
+      width auto
+      
+    +desktop()
+      display inline-block
+      padding 0 10px
+      width auto
+      background transparent
+    
+      &:last-child
+        padding-right 0
+  
+  .menu__link
+    font-family $heading-font-family
+    fs 16px
+    color $primary-color
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    transition: all 0.3s
+    
+    &:hover,
+    &:focus
+      color $alt-color
+    
+  // Active menu
+  .menu__link--current
+    color $alt-color
+    //border-bottom 1px solid $alt-color
+
+// Override Responsive Nav js
+.nav-toggle
+  float right !important
+  margin-top -10px !important
+
+body.front .nav-toggle
+  //margin-top 40px !important
+    
+    
+// Animated menu
+#site-header.shrink
+  
+  #site-menu
+    border-bottom 1px solid $gray
+    +desktop()
+      border-bottom 0
+    
+  .menu__link
+    fs 14px
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    transition: all 0.3s
+    
+  .nav-toggle
+    margin-top -20px !important

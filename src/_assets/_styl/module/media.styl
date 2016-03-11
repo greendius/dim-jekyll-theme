@@ -1,0 +1,36 @@
+// ==============================================================
+// ==	Media
+// ==============================================================
+.media
+
+	.media__items
+		//debug()
+		padding: $small-spacing 0
+
+	.media__avatar__wrapper,
+	.media__content
+		display: table-cell
+		vertical-align: top
+
+	.media__avatar__wrapper
+		padding-right: $small-spacing
+		
+		> .media__avatar
+			@extend .avatar
+
+	.media__content
+		width: 100%
+		
+	.media__meta
+		font-size: .8rem
+		color: $mute-font-color
+		
+	.media__author
+		font-size: 1rem
+		font-weight: bold
+		
+	.media__author,
+	.media__content p
+		margin-bottom: $small-spacing
+
+

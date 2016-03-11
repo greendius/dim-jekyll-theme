@@ -1,0 +1,31 @@
+// Live Chat
+// =====
+
+.livechat
+  //debug()
+  z-index 9
+  margin $spacing auto 0 auto
+  
+  +above('m')
+    position fixed
+    bottom 0
+    right 10px
+    margin 0
+    
+  a
+    display block
+    padding $small-spacing $spacing
+    fs 14px
+
+    color #fff
+    background $action-color
+    color #fff
+
+    &:hover
+      background darken( $action-color, 15% )
+
+    +above('m')
+      padding 5px 12px
+      box-shadow 0 2px 5px #777
+
+    

@@ -1,0 +1,47 @@
+// ==============================================================
+// ==	Label
+// ==============================================================
+
+// Default
+.label
+	$label-font-family = $font-family
+	$label-font-size = 12px
+	$label-font-color = $font-color
+	$label-bg-color = $default-color
+	$label-border-radius = 1px
+	
+	display: inline-block
+	padding: 2px 8px
+	
+	font-size: $label-font-size
+	color: $label-font-color
+	
+	background-color: $label-bg-color
+	border-radius: $label-border-radius
+
+.label--primary,
+.label--info,
+.label--success,
+.label--warning,
+.label--error
+	color: #fff
+	
+// Primary
+.label--primary
+	background-color: $primary-color
+	
+// Info
+.label--info
+	background-color: $info-color
+	
+// Success
+.label--success
+	background-color: $success-color
+	
+// Warning
+.label--warning
+	background-color: $warning-color
+	
+// Error
+.label--error
+	background-color: $error-color

@@ -1,0 +1,41 @@
+<nav id="site-menu" class="nav-collapse">
+<!--
+	<ul class="menu">
+		<li class="menu__items"><a class="menu__link hvr-underline-from-center" href="{{ site.baseurl }}/">หน้าหลัก</a></li>
+		<li class="menu__items"><a class="menu__link hvr-underline-from-center{% if page.url contains 'about' %} menu__link--current{% endif %}" href="{{ site.baseurl }}/about/">เกี่ยวกับเรา</a></li>
+		<li class="menu__items"><a class="menu__link hvr-underline-from-center{% if page.url contains 'usvisa' %} menu__link--current{% endif %}" href="{{ site.baseurl }}/usvisa/">วีซ่าอเมริกา</a></li>
+		<li class="menu__items"><a class="menu__link hvr-underline-from-center{% if page.url contains 'marriage' %} menu__link--current{% endif %}" href="{{ site.baseurl }}/marriage">จดทะเบียนสมรสกับชาวต่างชาติ</a></li>
+		<li class="menu__items"><a class="menu__link hvr-underline-from-center{% if page.url contains 'contact' %} menu__link--current{% endif %}" href="{{ site.baseurl }}/contact/">ติดต่อเรา</a></li>
+	</ul>
+-->
+ 
+  <ul class="menu">
+    {% for link in site.data.navigation %}
+      {% if link.url contains 'http' %}
+        {% assign domain = '' %}
+      {% else %}
+        {% assign domain = site.url %}
+      {% endif %}
+      <li class="menu__items">
+        <a href="{{ domain }}{{ link.url }}" class="menu__link hvr-underline-from-center{% if page.url == link.url %} menu__link--current{% endif %}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+
+<!--
+<nav id="site-menu">
+    <ul class="menu">
+    {% for link in site.data.navigation %}
+        {% assign current = nil %}
+        {% if page.url contains link.url %}
+            {% assign current = 'menu__link--current' %}
+        {% endif %}
+        <li class="menu__items {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+            <a href="{{ link.url }}" class="menu__link hvr-underline-from-center {{ current }}">{{ link.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</nav>
+-->

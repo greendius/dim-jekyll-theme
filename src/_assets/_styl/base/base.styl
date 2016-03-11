@@ -1,0 +1,342 @@
+// ==============================================================
+// == 	Base
+// ==============================================================
+
+// ---------------------------
+// +	Reset
+// ---------------------------
+*,
+*:before,
+*:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+	
+h1,
+figure,
+fieldset
+  margin: 0
+
+img,
+video,
+audio,
+embed,
+object,
+input,
+iframe,
+figure,
+figcaption
+  max-width: 100%
+
+// ---------------------------
+// +	Html
+// ---------------------------
+html,
+body
+  min-height 100%
+  
+html
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  background: $site-bg-color
+
+body
+  font-family: $font-family
+  font-size: $font-size
+  -webkit-font-smoothing: antialiased
+  line-height: $line-height
+  color: $font-color
+
+// ---------------------------
+// +	Heading
+// ---------------------------
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6
+  margin: 0 0 $spacing
+  line-height: $heading-line-height
+  font-family: $heading-font-family
+  font-weight: $heading-font-weight
+  color: $heading-font-color
+
+p
+  margin-bottom: $spacing
+
+a
+  position: relative
+  color: $alt-color
+  text-decoration: none
+  transition: all 0.2s ease-in-out
+
+  &:active,
+  &:focus,
+  &:hover
+    color: lighten( $alt-color, 30% )
+  
+  &:active,
+  &:focus
+    outline: none
+
+// ---------------------------
+// +	List
+// 		ul, ol, li, dl, dt, dd
+// ---------------------------
+ul,
+ol
+  //debug()
+  padding: 0
+  line-height: $line-height
+	
+  list-style: disc outside
+  margin: 0 0 $spacing
+  //margin-left: $small-spacing
+		
+  li
+    position: relative
+    left: 2%
+    margin-right: 0
+
+ul
+  list-style: disc outside
+
+ul li ul li
+  list-style-type: circle
+  padding-left: 1em
+
+ol
+  list-style: decimal outside
+
+ol li ol li
+  list-style-type: decimal
+  padding-left: 1em
+
+dl
+  margin-bottom: $spacing
+	
+  dt
+    font-weight: bold
+    margin-top: $small-spacing
+    
+  dd
+    margin: 0
+
+// ---------------------------
+// +	Table
+// ---------------------------
+table
+  table() // table($border,$striped,$condensed)
+  margin: $spacing auto
+  border-radius: 0
+	
+  th,
+  td
+    padding: $small-spacing
+
+// ---------------------------
+// +	Code
+// ---------------------------
+code,
+kbd,
+pre
+  font-family: $monospace-font-family
+  font-size: 13px
+
+kbd
+  padding: 2px 4px
+  color: #fff
+  background-color: #333
+  border-radius: 2px
+  box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25) inset
+
+// Preformatted Text
+pre
+  //debug()
+  display: block
+  padding: 20px 15px 25px 10px
+  margin: 10px 0 $spacing
+  line-height: $line-height
+  word-break: break-all
+  word-wrap: break-word
+  color: #333
+  background-color: #f5f5f5
+  border: 1px solid $border-color
+  border-radius: 0
+  overflow-x: auto
+
+code
+  padding: 3px
+  color: #c7254e
+  background-color: #f9f2f4
+  border-radius: 0
+
+pre > code
+  color: #333
+  background-color: #f5f5f5
+	
+// ---------------------------
+// +	Forms
+// ---------------------------
+input,
+label,
+select,
+textarea
+  display: inline-block
+  width: auto
+  max-width: 100%
+	
+  margin-bottom: $spacing
+	
+  font-family: $font-family
+  font-size: 1rem
+	
+label
+  margin: 3px
+  font-weight: bold
+
+  &.required::after
+    content: "*"
+
+  abbr
+    display: none
+		
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search]
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+
+  -moz-border-radius: 0
+  -webkit-border-radius: 0
+  border-radius: 0
+	
+  width: 100%
+	
+  box-sizing: border-box
+
+input[type=text],
+input[type=search]
+  //input()
+  padding: 6px 10px
+
+  font-family: $font-family
+
+  border: 1px solid $border-color
+  border-radius: none
+
+  transition: box-shadow 0.3s, border 0.3s
+
+input[type=text]:focus,
+input[type=search]:focus
+  border: solid 1px lighten( $action-color, 50% )
+  box-shadow: 0 0 5px 1px lighten( $action-color, 60% )
+  outline: none
+
+input[type=checkbox]
+  box-shadow: none
+  border: 0
+  outline: 0
+
+select
+  padding: 0 7px
+  font-size: 13px
+  line-height: 1
+  border: 1px solid $border-color
+	
+  option
+    padding: 2px 7px
+    border: 0
+    outline: 0
+    box-shadow: none
+
+textarea
+  width: 100%
+  padding: 8px 10px
+
+  font-size: 1rem
+  font-family: $font-family
+
+  border: 1px solid $border-color
+  border-radius: none
+
+  transition: box-shadow 0.3s, border 0.3s
+  resize: vertical
+	
+textarea:focus
+  border: solid 1px lighten( $action-color, 50% )
+  box-shadow: 0 0 5px 1px lighten( $action-color, 60% )
+  outline: none
+	
+fieldset
+  background-color: $secondary-background-color
+  border: 1px solid $border-color
+  margin: 0 0 $small-spacing
+  padding: $spacing
+	
+// Placeholder
+::-webkit-input-placeholder
+  color: lighten( $font-color, 50% )
+
+::-moz-placeholder/* Firefox 19+ */
+  color: lighten( $font-color, 50% )
+
+:-ms-input-placeholder
+  color: lighten( $font-color, 50% )
+
+// ---------------------------
+// +	Others
+// ---------------------------
+hr
+  border-bottom: 1px solid $border-color
+  border-left: none
+  border-right: none
+  border-top: none
+  margin: $spacing 0
+
+img,
+figure,
+picture
+  //debug()
+  margin: 0
+  max-width: 100%
+  height: auto
+  vertical-align: middle
+	
+  figcaption
+    padding: 6px
+    line-height: $line-height
+    fs: $small-font-size
+    color: $muted-color
+    border-bottom: 1px solid $border-color
+		
+figure
+  margin-bottom: $spacing
+
+abbr,
+acronym
+  cursor: help
+  border-bottom: 1px dotted $border-color
+	
+abbr[title]
+  border-bottom: 0
+		
+blockquote
+  padding: .5rem $spacing
+  margin: 0 0 $spacing
+  font-size: 1.2 rem
+  border-left: 2px solid $primary-color
+
+  p
+    margin: 0
+		
+address
+  font-style: normal
+  font-size: .9em

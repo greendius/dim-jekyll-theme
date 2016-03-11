@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Head -->
+  {% include _head.html %}
+
+  <body id="site" class="{{ page.class }}">
+
+    <!-- Site's Header -->
+    {%include _header.html %}
+
+    <!-- Site's Body -->
+    <main class="main">
+      {{ content }}
+    </main>
+    
+    <!-- Site's Footer -->
+    {% include _footer.html %}
+
+    <!-- Javascript -->
+    {% include _bottom.html %}
+
+  </body>
+</html>

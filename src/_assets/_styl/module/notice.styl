@@ -1,0 +1,110 @@
+// ==============================================================
+// == notice
+// ==============================================================
+
+// Default
+$notice-font-color = darken( $default-color, 70% )
+$notice-bg-color = rgba( $default-color, .6 )
+$notice-border-size = 4px
+$notice-border-color = darken( $default-color, 10% )
+$notice-border-radius = 0
+
+// Info
+$notice-info-font-color = darken( $info-color, 50% )
+$notice-info-bg-color = rgba( $info-color, .2 )
+$notice-info-border-color =$info-color
+
+// Success
+$notice-success-font-color = darken( $success-color, 50% )
+$notice-success-bg-color = rgba( $success-color, .4 )
+$notice-success-border-color = $success-color
+
+// Warning
+$notice-warning-font-color = darken( $warning-color, 50% )
+$notice-warning-bg-color = rgba( $warning-color, .3 )
+$notice-warning-border-color = $warning-color
+
+// Error
+$notice-error-font-color = darken( $error-color, 50% )
+$notice-error-bg-color = rgba( $error-color, .5 )
+$notice-error-border-color = $error-color
+
+.notice-message
+	margin: $spacing auto
+
+.notice
+	//debug()
+	relative()
+	padding: $small-spacing 37px
+	color: $notice-font-color
+	background-color: $notice-bg-color
+	border-left: $notice-border-size solid $notice-border-color
+
+	p
+
+		
+		&:last-child
+			margin-bottom: 0
+
+	.icon
+		margin-right: .5rem
+
+	// With close button
+	.notice__close
+		absolute: top 50% right 5px
+		margin-top: -10px
+		
+		width: 20px
+		height: 20px
+		padding: 0
+
+		color: #fff
+		background: none
+		border-radius: 0
+		
+		opacity: .6
+		
+		&:hover
+			opacity: 1
+
+.notice::before
+	faIcon()
+	absolute: top 50% left 15px
+	margin-top: -7px
+	
+// Info
+.notice--info
+	color: $notice-info-font-color
+	background-color: $notice-info-bg-color
+	border-color: $notice-info-border-color
+	
+	&::before
+		content: $fa-var-info-circle
+		
+// Warning
+.notice--success
+	color: $notice-success-font-color
+	background-color: $notice-success-bg-color
+	border-color: $notice-success-border-color
+	
+	&::before
+		content: $fa-var-check-circle
+
+// Warning
+.notice--warning
+	color: $notice-warning-font-color
+	background-color: $notice-warning-bg-color
+	border-color: $notice-warning-border-color
+	
+	&::before
+		content: $fa-var-exclamation-triangle
+
+// Error
+.notice--error
+	color: $notice-error-font-color
+	background-color: $notice-error-bg-color
+	border-color: $notice-error-border-color
+	
+	&::before
+		content: $fa-var-ban
+

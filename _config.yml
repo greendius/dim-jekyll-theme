@@ -1,0 +1,37 @@
+# Dependencies
+markdown: redcarpet
+highlighter: pygments
+gems:
+  - jekyll-last-modified-at
+
+# Setup
+name: Dim Jekyll Theme
+title: Dim Jekyll Theme
+tagling: "Plain Jekyll Theme"
+description: "A simple plain Jekyll theme"
+
+source: src
+destination: web
+# Local Development
+baseurl: "http://localhost:3000"
+
+# Production
+# baseurl: "http://greendius.github.io/skeleton" # the subpath of your site, e.g. /blog/
+# url: "http://greendius.github.io/skeleton/" # the base hostname & protocol for your site
+
+version: alpha
+
+# permalink: pretty
+permalink: /:categories/:title/
+
+exclude: [todo.html]
+
+# Others
+author:
+  name: "K Worapon"
+  url: ""
+
+github:
+  repo: ""
+  
+encoding: "utf-8"

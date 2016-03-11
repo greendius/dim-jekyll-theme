@@ -1,0 +1,51 @@
+// List
+// =====
+
+.list
+  li
+    left 0
+    
+.list-no-bullet
+  list-style: none
+
+// List Group
+// -----
+.list-group
+  
+  .list-group__items
+    display: block
+    
+    position: relative
+    left: 0
+    
+    padding: 10px 15px
+    margin-bottom: -1px
+    
+    background-color: #fff
+    border: 1px solid $gray
+    
+// List Post
+// -----
+  .list-post
+    //debug()
+    margin auto
+    margin-bottom $spacing
+    max-width 680px
+    list-style none
+      
+  .list__items
+    left 0
+    overflow hidden
+    padding $spacing 0
+    border-bottom 1px solid $gray
+    
+    &:last-child
+      border-bottom 0
+    
+    .list__url
+      margin 0
+
+    .list__date
+      margin 0
+      margin-top -25px
+      color $muted-color

@@ -1,0 +1,36 @@
+// ---------------------------
+// +	Button alt
+// ---------------------------
+.btn--alt
+	$btn-alt-font-color = rgba( 255,255,255,.8 )
+	$btn-alt-bg-color = $alt-color
+	$btn-alt-border-color = darken( $alt-color, 10% )
+
+	$btn-alt-hover-font-color = rgba( 255,255,255, 1 )
+	$btn-alt-hover-bg-color = darken( $btn-alt-bg-color, 10% )
+	$btn-alt-hover-border-color = darken( $btn-alt-border-color, 10% )
+
+	color: $btn-alt-font-color
+
+	background: $btn-alt-bg-color
+	border-color: $btn-alt-border-color
+
+	&:hover
+		color: $btn-alt-hover-font-color
+		background: $btn-alt-hover-bg-color
+		border-color: $btn-alt-hover-border-color
+
+	&:active,
+	&.selected
+		@extend .btn--alt:hover
+
+	&.selected:hover
+		//background-color: darken($brand-alt, 10%)
+
+	&[disabled],
+	&.disabled,
+	&.is-disabled
+		&,
+		&:hover
+			color: $btn-alt-font-color
+			background-color: $btn-alt-bg-color

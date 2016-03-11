@@ -1,0 +1,47 @@
+// Hero area
+// =====
+
+.hero
+  //debug()
+  position relative
+  margin-bottom $spacing
+
+  // display flex
+  // align-items center
+  // justify-content center
+  z-index 0
+
+  width 100%
+  height 100vh
+  
+  background #777
+  background-size cover
+  background-repeat no-repeat
+  background-position center center
+  
+  .grid
+    height 100%
+    z-index 2
+  
+  .hero__content
+    position relative
+    display flex
+    flex-flow column wrap
+    align-items center
+    justify-content center
+    height 100%
+    text-align center
+    
+  .hero__title
+    margin-top 80px
+    max-width 680px
+    fs 5rem
+    line-height 1.2
+    color #fff
+    
+  .hero__copy
+    max-width 680px
+    fs 3rem
+    line-height 1.2
+    color #fff
+

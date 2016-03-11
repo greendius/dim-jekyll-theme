@@ -1,0 +1,44 @@
+// Block
+// =====
+
+.block
+  //debug()
+  padding $spacing 0
+  border-bottom 1px solid $border-color
+  
+  +above('m')
+    border-bottom 0
+  
+  .block__img
+    margin $spacing auto
+    text-align center
+    
+    img
+      width 100px
+      height 100px
+      border-radius 50%
+    
+  .block__title
+    position relative
+    margin auto
+    margin-bottom 16px
+
+    padding-bottom 12px
+
+    text-align center
+
+    &::after
+      content ''
+
+      position absolute
+      left 45%
+      bottom 0
+
+      width 10%
+      height: 1px
+
+      background $primary-color
+    
+  .block__content
+    margin auto
+    width 90%
