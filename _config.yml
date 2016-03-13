@@ -5,13 +5,14 @@ gems:
   - jekyll-last-modified-at
 
 # Setup
-name: Dim Jekyll Theme
-title: Dim Jekyll Theme
-tagling: "Plain Jekyll Theme"
+name: dim Jekyll Theme
+title: dim Jekyll Theme
+tagline: "A simple plain Jekyll theme"
 description: "A simple plain Jekyll theme"
 
 source: src
 destination: web
+
 # Local Development
 baseurl: "http://localhost:3000"
 
@@ -24,12 +25,14 @@ version: alpha
 # permalink: pretty
 permalink: /:categories/:title/
 
+# excerpt_separator: <!--more-->
+
 exclude: [todo.html]
 
 # Others
 author:
   name: "K Worapon"
-  url: ""
+  url: "google.com"
 
 github:
   repo: ""

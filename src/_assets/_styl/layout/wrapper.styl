@@ -1,4 +1,4 @@
-// WRAPPER
+// Wrapper
 // =====
 
 .main
@@ -11,11 +11,18 @@
   //margin-bottom: $spacing
   border-bottom 1px solid $border-color
 
-.content-container,
 .grid
+  //debug()
   cf()
-  lost-center: $lost-container-width 20px no-flex
+  lost-center $lost-container-width 20px no-flex
 
 .content
+  margin 100px auto $spacing auto
+  //max-width 800px
+  
+  +above('m')
+    margin-top 180px
+    
+.aside
   margin 0 auto $spacing auto
-  max-width 800px
+  //max-width 800px

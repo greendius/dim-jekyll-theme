@@ -1,7 +1,7 @@
-// Site menu
+// Navigations
 // =====
 
-#site-menu
+#site-nav
   //debug()
   clear none !important
   background #fff
@@ -12,42 +12,51 @@
     box-shadow none
 
   .menu
+    margin 0
     padding 15px 0
     width 100%
     
     +tablet()
       margin-top 15px
-      padding 10px 0
+      // padding 10px 0
       text-align center
     
     +desktop()
-      overflow hidden
-      padding 12px 0
+      //overflow hidden
+      // padding 15px 0
       text-align right
       
   .menu__items
-    display block
+    position relative
     left 0
-    padding 5px 10px
-    text-align center
+    
+    display block
+    padding 0 10px
+    overflow visible
+    //text-align center
     
     +tablet()
       display inline-block
-      padding 0 10px
+      // padding 0 10px
       width auto
       
     +desktop()
       display inline-block
-      padding 0 10px
+      // padding 0 10px
       width auto
       background transparent
     
       &:last-child
         padding-right 0
+        
+  .menu__icon
+    position relative
+    top -2px
+    fs .5rem
   
   .menu__link
     font-family $heading-font-family
-    fs 16px
+    fs 1rem
     color $primary-color
     -webkit-transition: all 0.3s
     -moz-transition: all 0.3s
@@ -61,29 +70,7 @@
   .menu__link--current
     color $alt-color
     //border-bottom 1px solid $alt-color
-
-// Override Responsive Nav js
+      
+// Override responsive-nav.js
 .nav-toggle
-  float right !important
-  margin-top -10px !important
-
-body.front .nav-toggle
-  //margin-top 40px !important
-    
-    
-// Animated menu
-#site-header.shrink
-  
-  #site-menu
-    border-bottom 1px solid $gray
-    +desktop()
-      border-bottom 0
-    
-  .menu__link
-    fs 14px
-    -webkit-transition: all 0.3s
-    -moz-transition: all 0.3s
-    transition: all 0.3s
-    
-  .nav-toggle
-    margin-top -20px !important
+  margin-top -20px !important

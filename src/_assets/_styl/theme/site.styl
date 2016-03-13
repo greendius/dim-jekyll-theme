@@ -12,7 +12,7 @@
   //overflow hidden
   width 100%
   height auto
-  padding 12px 0
+  padding 10px 0
   background #fff
   border-bottom 1px solid $gray
   //box-shadow 0 0 4px $gray
@@ -20,13 +20,13 @@
   -moz-transition: height 0.3s
   transition: height 0.3s
   
-  +desktop()
-    height 90px
-    background transparent
-    border-bottom 0
+  // +desktop()
+    //height 90px
+    //background transparent
+    //border-bottom 0
   
-#site-header-container
-  overflow hidden
+#site-header .grid
+  //overflow hidden
   margin auto
   max-width $lost-container-width
   
@@ -36,7 +36,7 @@
     +desktop()
       lost-column 1/2
       
-  #site-menu
+  #site-nav
     lost-column 1/1
     
     +desktop()
@@ -54,11 +54,12 @@
 // Site Footer
 // -----
 #site-footer
-  width: 100%
-  padding: $spacing 0 $spacing 0
+  clear both
+  width 100%
+  padding $spacing 0 $spacing 0
   text-align center
   color #777
-  background: #fff
+  background #fff
   border-top 1px solid rgba( $primary-color, .1 )
 
   .footer-title

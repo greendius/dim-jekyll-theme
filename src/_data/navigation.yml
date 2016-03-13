@@ -1,19 +1,13 @@
 # Site navigation links
 
-- title: หน้าหลัก
+- title: home
   url: /
 
-- title: วีซ่าอเมริกา
-  url: /usvisa/
+- title: page
+  url: /page/
 
-#- title: แหล่งข้อมูล
-#  url: /resources/
-
-#- title: แผนผังเว็บไซท์
-#  url: /sitemap/
-
-- title: เกี่ยวกับเรา
+- title: about
   url: /about/
   
-- title: ติดต่อเรา
+- title: contact
   url: /contact/

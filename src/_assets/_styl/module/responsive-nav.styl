@@ -14,15 +14,16 @@
 }*/
 
 .js .nav-collapse
-	clip: rect(0 0 0 0)
-	max-height: 0
-	position: absolute
-	display: block
-	overflow: hidden
-	zoom: 1
+  clip: rect(0 0 0 0)
+  max-height: 0
+  position: absolute
+  display: block
+  overflow hidden
+  overflow visible
+  zoom: 1
 
 .nav-collapse.opened
-	max-height: 9999px
+  max-height: 9999px
 
 .nav-toggle
 /*  -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -33,27 +34,27 @@
   -o-user-select: none;
   user-select: none;*/
 
-	overflow: hidden
-	
-	display: block
-	width: 60px
-	height: 55px
-	
-	text-indent: -9999px
-	
-	position: absolute
-	top: 15px
-	right: 5px
-	background: $primary-color url("../img/hamburger.gif") no-repeat scroll 50% 33%
-	
-	user-select: none
+  overflow: hidden
+  
+  display: block
+  width: 60px
+  height: 55px
+  
+  text-indent: -9999px
+  
+  position: absolute
+  top: 15px
+  right: 5px
+  background: $primary-color url("../img/hamburger.gif") no-repeat scroll 50% 33%
+  
+  user-select: none
 
 @media screen and (min-width: 40em)
-	.js .nav-collapse
-		position: relative
-		
-	.js .nav-collapse.closed
-		max-height: none
-		
-	.nav-toggle
-		display: none
+  .js .nav-collapse
+    position: relative
+    
+  .js .nav-collapse.closed
+    max-height: none
+    
+  .nav-toggle
+    display: none

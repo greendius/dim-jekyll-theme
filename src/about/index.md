@@ -1,25 +1,17 @@
 ---
 layout: page
-title: เกี่ยวกับเรา
+title: about
 excerpt: 
 image: <img src="http://dummyimage.com/800x450/000/fff" />
-category: page
+categories: page
 tag: [about]
 ---
 
-<div class="post-img">
-	<div class="">
-		{{ page.image }}
-	</div>
-</div>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus magnam animi illo ab ipsum molestiae, ea cupiditate, soluta eveniet. Sequi maxime ad labore id iste odio voluptatum dolor expedita nemo.
 
-G.A.M. Legal Alliance คือสมาคมวิชาชีพนักกฎหมายไทยและให้คำปรึกษาทางธุรกิจเกี่ยวกับต่างประเทศซึ่งมีประสบการณ์มายาวนานทั้งในประเทศไทย และต่างประเทศในแถบเอเชีย เราได้ร่วมกลุ่มกันเพื่อเปิดบริการให้คำแนะนำสำหรับนักลงทุนชาวต่างชาติที่มีความต้องการในการลงทุนเพื่อดำเนินธุรกิจ หรือในการซื้อทรัพย์สินในประเทศไทย รวมทั้ง ผู้ที่ต้องการใช้ช่วงเวลาในวัยเกษียณอายุในประเทศไทย หรือผู้ที่ต้องการความช่วยเหลือทางด้านกฎหมายระหว่างที่พำนักอยู่ในประเทศไทย
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
 
-การบริการทางด้านกฎหมายของเรา มีทั้ง กฎหมายเกี่ยวกับหุ้นส่วนบริษัท, กฎหมายเกี่ยวกับตรวจคนเข้าเมือง, กฎหมายแรงงาน, กฎหมายครอบครัว, กฎหมายแพ่งและพาณิชย์ และกฎหมายอาญา ซึ่งเรามีประสบการณ์ทางด้านอสังหาริมทรัพย์ ไม่ว่าจะเป็นการทำนิติกรรมซื้อขายที่ดิน หรือซื้อขายคอนโดมิเนียม ,การเช่าอสังหาริมทรัพย์ รวมถึงมีบริษัทในเครือทางด้านภาษีและการบัญชี พร้อมให้บริการครบวงจรในการดูแลด้านบัญชีและให้คำปรึกษาด้านภาษี และรวมทั้งบริการด้านการตรวจสอบบัญชีด้วย
+Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
 
- 
-ปรัชญาขององค์กร คือ การบริการอย่างมีคุณภาพ มีมาตราฐาน ทันเวลา และในราคาที่เหมาะสม ซึ่งเรามีความภาคภูมิใจ ใน คำขวัญ ขององค์กร ของเรา “เราดูแลลูกค้าของเรา” เพราะนี่คือสิ่งที่เป็นเอกลักษณ์ของเรา เป็นสิ่งที่ทำให้ผู้คนมาใช้บริการของสำนักงานเรา เพื่อที่จะขอคำแนะนำและความช่วยเหลือ
-
-
-เมื่อคุณมาใช้บริการของ จี เอ เอ็ม ลีเกิ้ล อัลลัยแอนส์ ไม่ต้องเสียค่าใช้จ่ายใดๆในการให้คำปรึกษา พนักงานของเรายินดีที่จะให้คำปรึกษากับคุณในทุกเรื่อง ซึ่งเราจะได้ทำความรู้จักกับลูกค้าของเราด้วย และช่วยเหลือคุณในสิ่งที่ดีที่สุด

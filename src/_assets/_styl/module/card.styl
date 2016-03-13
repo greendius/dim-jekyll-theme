@@ -3,36 +3,54 @@
 
 .card
   //debug()
-  //border 1px solid $border-color
   display block
   margin $spacing 0
-  border-radius: 2px
-	
+  
+  border 1px solid $border-color
+  box-shadow 0 2px 0 $primary-color
+  border-radius: 4px
+  
+  transition 100ms ease-out-sine
+  
   .card-img // wrapper
-    //margin-bottom 1px
-		
-  .card-content // wrapper
     overflow hidden
-        
+
+    height 150px
+    
+    border-radius: 4px
+    border-bottom-right-radius: 0
+    border-bottom-left-radius: 0
+
+    img
+      width: auto
+      height auto
+      objeft-fit cover
+      //object-position: 50% -10px
+
+    
+  .card-content // wrapper
+    clear both
+    overflow hidden
+
     width 100%
     height auto
-        
+
     padding $spacing
-    //padding-left $spacing
-		
-    border-bottom 1px solid $alt-color
-    
+
     transition 100ms ease-out-sine
     
     +above('m')
-      height 180px
-		
+      height 200px
+
     .card__title
       margin 0
-      
+
     .card__date
+      margin 0
+      margin-bottom 5px
+      fs .9rem
       color $muted-color
-			
+
     .card__excerpt
       margin 0
 
@@ -43,8 +61,10 @@
     .card__more
       margin-top 8px
       fs .9rem
-			
+
   &:hover
+    //border-bottom-width 10px
+    box-shadow 0 7px 0 $alt-color
+
     .card-content
       background rgba( $gray, 1 )
-      border-bottom-width 10px

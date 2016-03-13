@@ -4,7 +4,7 @@
   <!-- Head -->
   {% include _head.html %}
   
-  <body id="site" class=" {{ page.class }}">
+  <body id="site" class="{{ page.class }}">
 
       <!-- Site's Header -->
       {% include _header.html %}
@@ -12,22 +12,29 @@
       <!-- Site's Body -->
       <main class="main">
 
-        <div class="page-header">
-          <div class="grid">
-            <h1 class="page-title">{{ page.title }}</h1>
-            {% include _breadcrumbs.html %}
-            {% include _modified.html %}
-          </div>
-        </div><!-- /.page-header -->
+        <div class="grid">
 
-        <div class="content">
-          <div class="grid">
+          <div class="content">
+
+            <div class="page-header">
+              <h1 class="page-title">{{ page.title }}</h1>
+              <div class="page-meta">
+                <p class="page-date">{{ page.date | date: "%-d %B %Y" }}</p>
+              </div>
+              {% include _breadcrumbs.html %}
+            </div><!-- /.page-header -->
+
             {{ content }}
             {% include _sharer.html %}
-            {% include _banner-gam.html %}
-          </div>
-        </div><!-- /.content -->
 
+          </div><!-- /.content -->
+          
+          <aside class="aside">this is sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo corporis reprehenderit, delectus harum. Vero, deserunt accusantium temporibus voluptates voluptatem cumque dignissimos. Ratione at saepe labore, quia voluptate similique vel cupiditate?</aside>
+
+        </div><!-- /.grid -->
+
+
+        
       </main>
 
       <!-- Site's Footer -->

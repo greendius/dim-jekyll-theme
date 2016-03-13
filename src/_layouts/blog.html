@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Head -->
+  {% include _head.html %}
+  
+  <body id="site" class="{{ page.class }}">
+
+      <!-- Site's Header -->
+      {% include _header.html %}
+
+      <!-- Site's Body -->
+      <main class="main">
+
+        <div class="grid">
+
+          <div class="content">
+
+            <div class="page-header">
+              <h1 class="page-title">{{ page.title }}</h1>
+              {% include _breadcrumbs.html %}
+            </div><!-- /.page-header -->
+
+            <div class="l-col l-col-3">
+
+              {% for post in site.posts %}
+                <div class="col">
+
+                  <a href="{{ post.url }}" title="{{ post.title }}">
+
+                    <div class="card">
+                      <div class="card-img">
+                        {% if post.image %}
+                          {{ post.image }}
+                        {% else %}
+                          <img src="{{ site.baseurl }}/img/liberty-statue.jpeg" />
+                        {% endif %}
+                      </div>
+
+                      <div class="card-content">
+                        <h5 class="card__title">{{ post.title }}</h5>
+                        <p class="card__date">{{ post.date | date: "%-d %B %Y" }}</p>
+                        <p class="card__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | truncatewords: 15 }}</p>
+                        <!-- <p class="card__excerpt">{{ post.content | strip_html | truncatewords: 15 }}</p> -->
+                      </div>
+                    </div><!-- /.card -->
+                  </a>
+
+                </div><!-- /.col -->
+              {% endfor %}
+
+            </div><!-- /.col -->
+
+          </div><!-- /.content -->
+
+        </div><!-- /.grid -->
+
+      </main>
+
+      <!-- Site's Footer -->
+      {% include _footer.html %}
+
+    <!-- Javascript -->
+    {% include _bottom.html %}
+
+  </body>
+</html>

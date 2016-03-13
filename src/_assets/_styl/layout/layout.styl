@@ -1,16 +1,38 @@
-// LAYOUT
+// Layouts
 // =====
 
-// Content
-// -----
-// .main,
-// .l-main
-// 	margin auto
-// 	margin-bottom $large-spacing
-// 	max-width 800px
-	
-// .l-archive
-// 	margin auto
-// 	margin-bottom $large-spacing
-// 	//max-width 980px
+// Default
+.l-page-2-col
+
+  .content
+    lost-column 1/1
+    +above('m')
+      lost-column 3/4
+      
+  .aside
+    lost-column 1/1
+    +above('m')
+      lost-column 1/4
+      margin-top 180px
+      
+// Left sidebar
+.l-page-l-sidebar
+  +above('m')
+    .content
+      lost-move 1/4
+    .aside
+      lost-move -3/4
+
+// Right sidebar
+// the default set to right sidebar
+// no need to edit
+// .l-page-r-sidebar
+//   +above('m')
+//     .content
+//       lost-move 1/4
+        
+//     .aside
+//       lost-move -3/4
+    
+    
 
