@@ -2,11 +2,9 @@
 layout: default
 ---
 
-{% if page.image %}
+{% if page.image.feature %}
   <div class="post-img">
-    <div class="">
-      {{ page.image }}
-    </div>
+    <img src="{{ site.baseurl }}/img/{{ page.image.feature }}" />
   </div>
 {% endif %}
 

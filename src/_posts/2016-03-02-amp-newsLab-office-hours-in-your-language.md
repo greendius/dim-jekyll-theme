@@ -1,12 +1,15 @@
 ---
 layout: post
-class:
+css:
 
 title: "AMP NewsLab Office Hours in your language"
 description:
 date: 2016-03-02
+
 image:
-excerpt:
+  feature:
+  credit:
+  creditlink:
 
 categories: [blog]
 tags: [blog]

@@ -1,12 +1,15 @@
 ---
 layout: post
-class:
+css:
 
 title: "Best practices for bloggers reviewing free products they receive from companies"
 description:
 date: 2016-03-11
-image: 
-excerpt:
+
+image:
+  feature: usa-skyline.jpg
+  credit:
+  creditlink:
 
 categories: [blog]
 tags: [blog]

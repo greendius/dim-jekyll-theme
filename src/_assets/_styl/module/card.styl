@@ -1,4 +1,4 @@
-// Card
+// Cards
 // =====
 
 .card
@@ -8,7 +8,7 @@
   
   border 1px solid $border-color
   box-shadow 0 2px 0 $primary-color
-  border-radius: 4px
+  border-radius 4px
   
   transition 100ms ease-out-sine
   
@@ -17,17 +17,19 @@
 
     height 150px
     
-    border-radius: 4px
-    border-bottom-right-radius: 0
-    border-bottom-left-radius: 0
+    border-radius 4px
+    border-bottom-right-radius 0
+    border-bottom-left-radius 0
+    
+    transition 100ms ease-out-sine
 
     img
-      width: auto
-      height auto
-      objeft-fit cover
-      //object-position: 50% -10px
+      display block
+      height 100%
+      width 100%
+      object-fit cover
+      object-position center
 
-    
   .card-content // wrapper
     clear both
     overflow hidden
@@ -63,8 +65,10 @@
       fs .9rem
 
   &:hover
-    //border-bottom-width 10px
     box-shadow 0 7px 0 $alt-color
+    
+    .card-img
+      opacity .8
 
     .card-content
       background rgba( $gray, 1 )

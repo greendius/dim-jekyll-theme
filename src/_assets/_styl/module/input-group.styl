@@ -1,85 +1,83 @@
-// ==============================================================
-// ==	Input group
-// ==============================================================
+// Input group
+// =====
 
 .input-group
-	//debug()
-	display: table
-	position: relative
-	margin-bottom: $spacing
-	
-	width: 100%
-	
-	border-collapse: separate
-	
-	.input-group__addon,
-	.input-group__field
-		display: table-cell
-		height: 37px
-		
-	.input-group__addon
-		width: 1%
-		padding: 6px 12px
-		
-		line-height: 1
-		vertical-align: middle
-		white-space: nowrap
-		
-		color: darken( $default-color, 60% )
-		background: $default-color
-		
-		border: 1px solid $border-color
-		border-radius: 2px
-		
-		&:first-child
-			border-right: 0
-			border-top-right-radius: 0
-			border-bottom-right-radius: 0
-			
-		&:last-child
-			border-left: 0
-			border-top-left-radius: 0
-			border-bottom-left-radius: 0
-		
-	.input-group__field
-		position: relative
-		margin-bottom: 0px
-		z-index: 2
-		width: 100%
-		float: left
+  //debug()
+  display table
+  position relative
+  margin-bottom $spacing
+  
+  width 100%
+  
+  border-collapse separate
+  
+  .input-group__addon,
+  .input-group__field
+    display table-cell
+    height 37px
+    
+  .input-group__addon
+    width 1%
+    padding 6px 12px
+    
+    line-height 1
+    vertical-align middle
+    white-space nowrap
+    
+    color darken( $default-color, 60% )
+    background $default-color
+    
+    border 1px solid $border-color
+    border-radius 2px
+    
+    &:first-child
+      border-right 0
+      border-top-right-radius 0
+      border-bottom-right-radius 0
+      
+    &:last-child
+      border-left 0
+      border-top-left-radius 0
+      border-bottom-left-radius 0
+    
+  .input-group__field
+    position relative
+    margin-bottom 0px
+    z-index 2
+    width 100%
+    float left
 
 // With button
 .input-group-btn
-	//debug()
-	overflow: hidden
-	position: relative
-	margin-bottom: $spacing
-	border-collapse: separate
-	
-	.input-group-btn__field,
-	.input-group-btn__btn
-		margin: 0
-		padding: 6px 10px
-		height: 37px
-	
-	.input-group-btn__field
-		float: left
-		width: 70%
-		
-		+above('m')
-			width: 90%
+  //debug()
+  overflow hidden
+  position relative
+  margin-bottom $spacing
+  border-collapse separate
+  
+  .input-group-btn__field,
+  .input-group-btn__btn
+    margin 0
+    padding 6px 10px
+    height 37px
+  
+  .input-group-btn__field
+    float left
+    width 70%
+    
+    +above('m')
+      width 90%
 
-		
-	.input-group-btn__btn
-		float: left
-		width: 30%
-		border-radius: 0
-		border-top-right-radius: 2px
-		border-bottom-right-radius: 2px
-		
-		+above('m')
-			width: 10%
-		
-	.input-group-btn__btn--primary
-		@extend .btn--primary
-		
+  .input-group-btn__btn
+    float left
+    width 30%
+    border-radius 0
+    border-top-right-radius 2px
+    border-bottom-right-radius 2px
+    
+    +above('m')
+      width 10%
+    
+  .input-group-btn__btn--primary
+    @extend .btn--primary
+    

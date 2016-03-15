@@ -1,74 +1,72 @@
-// ==============================================================
-// ==	Pagination
-// ==============================================================
-
+// Pagination
+// =====
 
 .pagination-wrapper
-	//debug()
-	cf()
-	overflow: hidden
-	
+  //debug()
+  cf()
+  overflow hidden
+  
 .pagination
-	$pagination-bg-color = #fff
+  $pagination-bg-color = #fff
 
-	float: left
-	list-style: none
-	
-	font-size: .8rem
-	
-	border: 1px solid $border-color
-	border-radius: 3px
+  float left
+  list-style none
+  
+  font-size .8rem
+  
+  border 1px solid $border-color
+  border-radius 3px
 
-	.pagination__items
-		display: block
-		float: left
-		
-		position: relative
-		left: 0
-		
-		padding: 0
-		margin: 0
-		
-		border-left: 1px solid $border-color
-		border-right: 0
-		
-		&:first-child
-			border-left: 0
-			
-		&:last-child
-			border-right: 0
-		
-		.pagination__link
-			nolinkanimate()
-			
-			display: inline-block
-			padding: 5px 14px
-			margin: auto 0
-			
-			font-size: .9rem
-			
-			color: $action-color
-			background: $pagination-bg-color
+  .pagination__items
+    display block
+    float left
+    
+    position relative
+    left 0
+    
+    padding 0
+    margin 0
+    
+    border-left 1px solid $border-color
+    border-right 0
+    
+    &:first-child
+      border-left 0
+      
+    &:last-child
+      border-right 0
+    
+    .pagination__link
+      nolinkanimate()
+      
+      display inline-block
+      padding 5px 14px
+      margin auto 0
+      
+      font-size .9rem
+      
+      color $action-color
+      background $pagination-bg-color
 
-			&:hover
-				//color: #fff
-				background: darken( $pagination-bg-color, 10% )
+      &hover
+        //color #fff
+        background darken( $pagination-bg-color, 10% )
 
-		.pagination__link::before,
-		.pagination__link::after,
-		a::before,
-		a::after
-			nolinkanimate()
+    .pagination__linkbefore,
+    .pagination__linkafter,
+    a::before,
+    a::after
+      nolinkanimate()
 
-	.pagination__items--current > a,
-	.pagination__items--current > .pagination__link
-		color: $muted-color
-		background: darken( $pagination-bg-color, 5% )
-		
-		&:hover
-			color: $muted-color
-			background: darken( $pagination-bg-color, 5% )
-			cursor: text
-		
+  .pagination__items--current > a,
+  .pagination__items--current > .pagination__link
+    color $muted-color
+    background darken( $pagination-bg-color, 5% )
+    
+    &:hover
+      color $muted-color
+      background darken( $pagination-bg-color, 5% )
+      cursor text
+    
 
 

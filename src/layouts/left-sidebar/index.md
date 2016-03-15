@@ -1,10 +1,14 @@
 ---
 layout: page
-class: l-page-2-col l-page-l-sidebar
+css: l-page-2-col l-page-l-sidebar
 
 title: Left sidebar layout
-excerpt: 
-image: <img src="http://dummyimage.com/800x450/000/fff" />
+description:
+
+image:
+  feature:
+  credit:
+  creditlink:
 
 categories: [layout]
 tag: [layout]

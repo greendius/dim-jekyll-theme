@@ -4,7 +4,7 @@
     {% for post in site.posts limit:5 %}
       <li class="list__items">
         <div class="list__content">
-          <h3><a class="list__url" href="{{ post.url }}">{{ post.title }}</a></h3>
+          <h4><a class="list__url" href="{{ post.url }}">{{ post.title }}</a></h4>
           <p class="list__date">{{ post.date | date: "%-d %B %Y" }}</p>
         </div>
       </li>

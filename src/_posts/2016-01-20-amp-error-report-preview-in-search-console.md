@@ -1,12 +1,15 @@
 ---
 layout: post
-class:
+css:
 
 title: "AMP error report preview in Search Console"
 description:
 date: 2016-01-20
+
 image:
-excerpt:
+  feature:
+  credit:
+  creditlink:
 
 categories: [blog]
 tags: [blog]

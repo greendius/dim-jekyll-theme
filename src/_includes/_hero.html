@@ -1,10 +1,15 @@
-<section class="hero">
-  <div class="grid">
+{% for items in site.data.hero %}
+  <section class="hero" style="background-image: url({{ site.baseurl }}/img/{{ items.background }});">
+    <div class="hero-inner">
 
-    <div class="hero__content">
-      <h1 class="hero__title">{{ site.title }}</h1>
-      <p class="hero__copy">{{ site.tagline }}</p>
-    </div>
+      <div class="grid">
+        <div class="hero__content">
+          <h1 class="hero__title">{{ items.title }}</h1>
+          <p class="hero__copy">{{ items.content }}</p>
+          <a href="" class="btn btn--primary btn--large hero__url">Link</a>
+        </div>
+      </div>
 
-  </div>
-</section>
+    </div><!-- /.hero-inner -->
+  </section><!-- /.hero -->
+{% endfor %}

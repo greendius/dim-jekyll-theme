@@ -1,12 +1,15 @@
 ---
 layout: post
-class:
+css:
 
 title: "Html Kitchen Sink"
 description:
 date: 2016-03-13
-image: 
-excerpt:
+
+image:
+  feature:
+  credit:
+  creditlink:
 
 categories: [blog]
 tags: [blog]

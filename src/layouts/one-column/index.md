@@ -1,13 +1,17 @@
 ---
 layout: page
-class:
+css:
 
 title: One column layout
-excerpt: 
-image: <img src="http://dummyimage.com/800x450/000/fff" />
+description:
+
+image:
+  feature: img-hero.jpg
+  credit:
+  creditlink:
 
 categories: [layout]
-tag: [layout]
+tags: [layout]
 ---
 
 Lorem ipsum dolor sit amet, viverra eget orci posuere feugiat nisl. Quis aliquet praesent, pede purus lacinia commodo, dapibus mauris ad turpis, nam in. Ultrices urna blandit vestibulum lorem curae adipiscing. Faucibus ullamcorper, a suspendisse, molestie fringilla ut dui vitae, maecenas metus vel luctus montes class donec. Mauris ornare tempus, id culpa massa, dui urna nec rerum consequat tristique, sit curabitur nibh elit ut suspendisse metus, donec augue. Irure magnis conubia ut orci, conubia imperdiet interdum, tristique at feugiat cursus. Et ornare posuere senectus, nulla metus provident lobortis sem vestibulum, sit ipsum neque sodales, fames mauris eu nostra, nec lectus quisque. Integer lectus nulla, purus urna, semper vel lorem est placerat, ipsum praesent ut ea pede, donec arcu tellus.

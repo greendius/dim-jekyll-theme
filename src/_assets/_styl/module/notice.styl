@@ -1,6 +1,5 @@
-// ==============================================================
-// == notice
-// ==============================================================
+// Notices
+// =====
 
 // Default
 $notice-font-color = darken( $default-color, 70% )
@@ -30,81 +29,81 @@ $notice-error-bg-color = rgba( $error-color, .5 )
 $notice-error-border-color = $error-color
 
 .notice-message
-	margin: $spacing auto
+	margin $spacing auto
 
 .notice
 	//debug()
 	relative()
-	padding: $small-spacing 37px
-	color: $notice-font-color
-	background-color: $notice-bg-color
-	border-left: $notice-border-size solid $notice-border-color
+	padding $small-spacing 37px
+	color $notice-font-color
+	background-color $notice-bg-color
+	border-left $notice-border-size solid $notice-border-color
 
 	p
 
 		
 		&:last-child
-			margin-bottom: 0
+			margin-bottom 0
 
 	.icon
-		margin-right: .5rem
+		margin-right .5rem
 
 	// With close button
 	.notice__close
-		absolute: top 50% right 5px
-		margin-top: -10px
+		absolute top 50% right 5px
+		margin-top -10px
 		
-		width: 20px
-		height: 20px
-		padding: 0
+		width 20px
+		height 20px
+		padding 0
 
-		color: #fff
-		background: none
-		border-radius: 0
+		color #fff
+		background none
+		border-radius 0
 		
-		opacity: .6
+		opacity .6
 		
 		&:hover
-			opacity: 1
+			opacity 1
 
 .notice::before
 	faIcon()
-	absolute: top 50% left 15px
-	margin-top: -7px
+	absolute top 50% left 15px
+	margin-top -7px
 	
 // Info
 .notice--info
-	color: $notice-info-font-color
-	background-color: $notice-info-bg-color
-	border-color: $notice-info-border-color
+	color $notice-info-font-color
+	background-color $notice-info-bg-color
+	border-color $notice-info-border-color
 	
 	&::before
-		content: $fa-var-info-circle
+		content $fa-var-info-circle
 		
 // Warning
 .notice--success
-	color: $notice-success-font-color
-	background-color: $notice-success-bg-color
-	border-color: $notice-success-border-color
+	color $notice-success-font-color
+	background-color $notice-success-bg-color
+	border-color $notice-success-border-color
 	
 	&::before
-		content: $fa-var-check-circle
+		content $fa-var-check-circle
 
 // Warning
 .notice--warning
-	color: $notice-warning-font-color
-	background-color: $notice-warning-bg-color
-	border-color: $notice-warning-border-color
+	color $notice-warning-font-color
+	background-color $notice-warning-bg-color
+	border-color $notice-warning-border-color
 	
 	&::before
-		content: $fa-var-exclamation-triangle
+		content $fa-var-exclamation-triangle
 
 // Error
 .notice--error
-	color: $notice-error-font-color
-	background-color: $notice-error-bg-color
-	border-color: $notice-error-border-color
+	color $notice-error-font-color
+	background-color $notice-error-bg-color
+	border-color $notice-error-border-color
 	
 	&::before
-		content: $fa-var-ban
+		content $fa-var-ban
 

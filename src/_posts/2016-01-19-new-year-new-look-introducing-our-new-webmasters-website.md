@@ -1,12 +1,15 @@
 ---
 layout: post
-class:
+css:
 
 title: "New year, new look: Introducing our new Webmasters website"
 description:
 date: 2016-01-19
+
 image:
-excerpt:
+  feature:
+  credit:
+  creditlink:
 
 categories: [blog]
 tags: [blog]

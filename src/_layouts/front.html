@@ -4,7 +4,7 @@
   <!-- Head -->
   {% include _head.html %}
 
-  <body id="site" class="{{ page.class }}">
+  <body id="site"{% if page.css %} class="{{ page.css }}"{% endif %}>
 
     <!-- Site's Header -->
     {%include _header.html %}

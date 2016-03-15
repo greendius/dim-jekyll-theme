@@ -1,43 +1,40 @@
-// ==============================================================
-// ==	Pager
-// ==============================================================
-
+// Pagers
+// =====
 
 .pager
-	//debug()
-	margin-bottom: $spacing
-	
-	.pager__items
-		display: inline-block
-		left: 0
-		padding: 0
-		
-	.pager__link
-		@extend .btn
-		@extend .btn--primary
-		position: relative
-		// padding: 8px 15px
-		
-		// font-size: 1rem
-		// border: 1px solid $border-color
-		
-	.pager__link::before
-		faIcon()
-		position: absolute
-		top: 12px
+  //debug()
+  margin-bottom $spacing
+  
+  .pager__items
+    display inline-block
+    left 0
+    padding 0
+    
+  .pager__link
+    @extend .btn
+    @extend .btn--primary
+    position relative
+    // padding 8px 15px
+    
+    // font-size 1rem
+    // border 1px solid $border-color
+    
+  .pager__link::before
+    faIcon()
+    position absolute
+    top 12px
 
-	.pager__link--prev
-		padding-left: 30px
-		
-	.pager__link--prev::before
-		content: $fa-var-arrow-left
-		left: 10px
-		
-	.pager__link--next
-		padding-right: 30px
-		
-	.pager__link--next::before
-		content: $fa-var-arrow-right
-		right: 10px
-		
+  .pager__link--prev
+    padding-left 30px
+    
+  .pager__link--prev::before
+    content $fa-var-arrow-left
+    left 10px
+    
+  .pager__link--next
+    padding-right 30px
+    
+  .pager__link--next::before
+    content $fa-var-arrow-right
+    right 10px
 

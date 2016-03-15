@@ -1,44 +1,42 @@
-// ==============================================================
-// ==	Progress bar
-// ==============================================================
-
+// Progress bars
+// =====
 
 progress:not(value),
 progress[value]
 	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
 	/* Get rid of the default appearance */
-	-webkit-appearance: none
-	appearance: none
+	-webkit-appearance none
+	appearance none
 
-	position: relative
-	margin: 0 0 $spacing
+	position relative
+	margin 0 0 $spacing
 	
-	width: 100%;
-	height: 20px
+	width 100%;
+	height 20px
 	
-	color: $action-color
-	background: $gray
+	color $action-color
+	background $gray
 	
 	//  This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. 
-	border: 0
+	border 0
 	
 progress:not(value)::-webkit-progress-bar,
 progress[value]::-webkit-progress-bar
 	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
 	/* Get rid of the default appearance */
-	-webkit-appearance: none
-	appearance: none
+	-webkit-appearance none
+	appearance none
 
-	position: relative
-	margin: 0 0 $spacing
+	position relative
+	margin 0 0 $spacing
 	
-	width: 100%;
-	height: 20px
+	width 100%;
+	height 20px
 	
-	color: $action-color
-	background: $gray
+	color $action-color
+	background $gray
 	
 	//  This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. 
-	border: 0
+	border 0
 
 

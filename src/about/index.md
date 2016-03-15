@@ -1,10 +1,17 @@
 ---
 layout: page
+css:
+
 title: about
-excerpt: 
-image: <img src="http://dummyimage.com/800x450/000/fff" />
-categories: page
-tag: [about]
+description:
+
+image:
+  feature: usa-skyline.jpg
+  credit:
+  creditlink:
+
+categories: [page]
+tag: [page, about]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus magnam animi illo ab ipsum molestiae, ea cupiditate, soluta eveniet. Sequi maxime ad labore id iste odio voluptatum dolor expedita nemo.

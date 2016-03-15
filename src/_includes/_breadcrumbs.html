@@ -1,16 +1,16 @@
 <nav class="breadcrumb">
-	<div class="content-container">
-	
-		{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+  <div class="grid">
+  
+    {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 
-		<a class="breadcrumb__items" href="/">Home</a>
-		{% for crumb in crumbs offset: 1 %}
-			{% if forloop.last %}
-				/ <span class="breadcrumb__items breadcrumb__items--current">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</span>
-			{% else %}
-				/ <a class="breadcrumb__items" href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-			{% endif %}
-		{% endfor %}
-	
-	</div>
+    <a class="breadcrumb__items" href="/">Home</a>
+    {% for crumb in crumbs offset: 1 %}
+      {% if forloop.last %}
+        / <span class="breadcrumb__items breadcrumb__items--current">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</span>
+      {% else %}
+        / <a class="breadcrumb__items" href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+      {% endif %}
+    {% endfor %}
+  
+  </div>
 </nav>

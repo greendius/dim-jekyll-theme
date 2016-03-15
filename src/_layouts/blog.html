@@ -4,7 +4,7 @@
   <!-- Head -->
   {% include _head.html %}
   
-  <body id="site" class="{{ page.class }}">
+  <body id="site"{% if page.css %} class="{{ page.css }}"{% endif %}>
 
       <!-- Site's Header -->
       {% include _header.html %}
@@ -23,24 +23,24 @@
 
             <div class="l-col l-col-3">
 
-              {% for post in site.posts %}
+              {% for entry in site.posts %}
                 <div class="col">
 
-                  <a href="{{ post.url }}" title="{{ post.title }}">
+                  <a href="{{ entry.url }}" title="{{ entry.title }}">
 
                     <div class="card">
                       <div class="card-img">
-                        {% if post.image %}
-                          {{ post.image }}
+                        {% if entry.image.feature %}
+                          <img src="{{ site.baseurl }}/img/{{ entry.image.feature }}" />
                         {% else %}
                           <img src="{{ site.baseurl }}/img/liberty-statue.jpeg" />
                         {% endif %}
                       </div>
 
                       <div class="card-content">
-                        <h5 class="card__title">{{ post.title }}</h5>
-                        <p class="card__date">{{ post.date | date: "%-d %B %Y" }}</p>
-                        <p class="card__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | truncatewords: 15 }}</p>
+                        <h5 class="card__title">{{ entry.title }}</h5>
+                        <p class="card__date">{{ entry.date | date: "%-d %B %Y" }}</p>
+                        <p class="card__excerpt">{{ entry.excerpt | remove: '<p>' | remove: '</p>' | strip_html | truncatewords: 15 }}</p>
                         <!-- <p class="card__excerpt">{{ post.content | strip_html | truncatewords: 15 }}</p> -->
                       </div>
                     </div><!-- /.card -->

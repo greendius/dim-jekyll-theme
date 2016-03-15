@@ -1,36 +1,36 @@
-// ---------------------------
-// +	Button Secondary
-// ---------------------------
+// Secondary button
+// =====
+
 .btn--secondary
-	$btn-secondary-font-color = rgba( 255,255,255,.8 )
-	$btn-secondary-bg-color = $secondary-color
-	$btn-secondary-border-color = darken( $secondary-color, 10% )
+  $btn-secondary-font-color = rgba( 255,255,255,.8 )
+  $btn-secondary-bg-color = $secondary-color
+  $btn-secondary-border-color = darken( $secondary-color, 10% )
 
-	$btn-secondary-hover-font-color = rgba( 255,255,255, 1 )
-	$btn-secondary-hover-bg-color = darken( $btn-secondary-bg-color, 10% )
-	$btn-secondary-hover-border-color = darken( $btn-secondary-border-color, 10% )
+  $btn-secondary-hover-font-color = rgba( 255,255,255, 1 )
+  $btn-secondary-hover-bg-color = darken( $btn-secondary-bg-color, 10% )
+  $btn-secondary-hover-border-color = darken( $btn-secondary-border-color, 10% )
 
-	color: $btn-secondary-font-color
+  color $btn-secondary-font-color
 
-	background: $btn-secondary-bg-color
-	border-color: $btn-secondary-border-color
+  background $btn-secondary-bg-color
+  border-color $btn-secondary-border-color
 
-	&:hover
-		color: $btn-secondary-hover-font-color
-		background: $btn-secondary-hover-bg-color
-		border-color: $btn-secondary-hover-border-color
+  &:hover
+    color $btn-secondary-hover-font-color
+    background $btn-secondary-hover-bg-color
+    border-color $btn-secondary-hover-border-color
 
-	&:active,
-	&.selected
-		@extend .btn--secondary:hover
+  &:active,
+  &.selected
+    @extend .btn--secondary:hover
 
-	&.selected:hover
-		//background-color: darken($brand-secondary, 10%)
+  &.selected:hover
+    //background-color darken($brand-secondary, 10%)
 
-	&[disabled],
-	&.disabled,
-	&.is-disabled
-		&,
-		&:hover
-			color: $btn-secondary-font-color
-			background-color: $btn-secondary-bg-color
+  &[disabled],
+  &.disabled,
+  &.is-disabled
+    &,
+    &:hover
+      color $btn-secondary-font-color
+      background-color $btn-secondary-bg-color

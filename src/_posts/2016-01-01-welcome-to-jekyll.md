@@ -1,12 +1,15 @@
 ---
 layout: post
-class:
+css:
 
 title: "Welcome to Jekyll"
 description:
 date: 2016-01-01
-image: <img src="http://dummyimage.com/800x450/000/fff" />
-excerpt:
+
+image:
+  feature: img-hero.jpg
+  credit:
+  creditlink:
 
 categories: [blog]
 tags: [blog]

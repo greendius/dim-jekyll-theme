@@ -1,7 +1,16 @@
 ---
 layout: page
+css:
+
 title: Contact
-category: page
+description:
+
+image:
+  feature:
+  credit:
+  creditlink:
+
+categories: [page]
 ---
 
 <div class="centered">

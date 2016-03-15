@@ -1,12 +1,14 @@
 ---
 layout: post
-class:
+css:
 
 title: "An update on the Webmaster Central Blog"
 description:
 date: 2016-03-08
-image: <img src="https://2.bp.blogspot.com/-5HnwTdMzVbc/Vt8m7wO3vmI/AAAAAAAABgs/dydG1tEFJ4c/s600/wemoved.png" alt="We got new url" />
-excerpt:
+image:
+  feature: img-hero.jpg
+  credit:
+  creditlink:
 
 categories: [blog]
 tags: [blog]
