@@ -6,7 +6,7 @@ title: about
 description:
 
 image:
-  feature: usa-skyline.jpg
+  feature: alien-planet.jpg
   credit:
   creditlink:
 

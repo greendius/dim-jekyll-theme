@@ -6,7 +6,7 @@ title: Left sidebar layout
 description:
 
 image:
-  feature:
+  feature: img-hero.jpg
   credit:
   creditlink:
 

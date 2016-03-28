@@ -18,6 +18,8 @@
   background-color #fff
   box-shadow 0px 8px 12px 0px rgba(0,0,0,0.2)
   
+  animation: slideInDown .3s
+
   .dropdown__menu__items
     left 0
     display block !important
@@ -36,3 +38,18 @@
 .dropdown:hover .dropdown-content
   display block !important
   padding 15px 10px
+
+// Slide down animation
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -3%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// .dropdown-content
+//   animation-name slideInDown

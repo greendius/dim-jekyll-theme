@@ -7,7 +7,7 @@ description:
 date: 2016-03-11
 
 image:
-  feature: usa-skyline.jpg
+  feature:
   credit:
   creditlink:
 

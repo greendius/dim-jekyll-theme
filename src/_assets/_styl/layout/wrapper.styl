@@ -1,28 +1,26 @@
 // Wrapper
 // =====
 
-.main
-  min-height 95vh
-
-.section,
-.wrapper-block
-  cf()
-  padding $spacing 0
-  //margin-bottom: $spacing
-  border-bottom 1px solid $border-color
-
 .grid
-  //debug()
+  // debug()
   cf()
   lost-center $lost-container-width 20px no-flex
 
+.section
+  cf()
+  padding $spacing 0
+  border-bottom 1px solid $border-color
+
+.main
+  min-height 95vh
+
 .content
   margin 100px auto $spacing auto
-  //max-width 800px
+  max-width 800px
   
   +above('m')
     margin-top 180px
-    
+
 .aside
   margin 0 auto $spacing auto
-  //max-width 800px
+  max-width 800px

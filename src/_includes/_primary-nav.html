@@ -1,7 +1,7 @@
-<nav id="site-nav" class="site-nav nav-collapse" role="navigation">
+<nav id="primary-nav" class="primary-nav" role="navigation">
   <ul class="menu">
-    <li class="menu__items"><a class="menu__link{% if page.css contains 'front' %} menu__link--current{% endif %}" href="{{ site.baseurl }}/">home</a></li>
-    <li class="menu__items dropdown"><a class="menu__link{% if page.url contains 'layouts' %} menu__link--current{% endif %}" href="#">layouts <i class="menu__icon fa fa-chevron-down"></i></a>
+    <li class="menu__items"><a class="menu__url{% if page.css contains 'front' %} menu__url--current{% endif %}" href="{{ site.baseurl }}/">home</a></li>
+    <li class="menu__items dropdown"><a class="menu__link{% if page.url contains 'layouts' %} menu__url--current{% endif %}" href="#">layouts <i class="menu__icon fa fa-chevron-down"></i></a>
       <ul class="dropdown-content">
         <li class="dropdown__menu__items sub-menu"><a class="dropdown__menu__link" href="{{ site.baseurl }}/layouts/one-column/">one column</a></li>
         <li class="dropdown__menu__items sub-menu"><a class="dropdown__menu__link" href="{{ site.baseurl }}/layouts/left-sidebar/">left sidebar</a></li>
@@ -9,8 +9,29 @@
         <li class="dropdown__menu__items sub-menu"><a class="dropdown__menu__link" href="{{ site.baseurl }}/layouts/waffle/">Waffle</a></li>
       </ul>
     </li>
-    <li class="menu__items"><a class="menu__link{% if page.url contains 'blog' %} menu__link--current{% endif %}" href="{{ site.baseurl }}/blog/">blog</a></li>
-    <li class="menu__items"><a class="menu__link{% if page.url contains 'about' %} menu__link--current{% endif %}" href="{{ site.baseurl }}/about/">about</a></li>
-    <li class="menu__items"><a class="menu__link{% if page.url contains 'contact' %} menu__link--current{% endif %}" href="{{ site.baseurl }}/contact">contact</a></li>
+    <li class="menu__items"><a class="menu__url{% if page.url contains 'blog' %} menu__url--current{% endif %}" href="{{ site.baseurl }}/blog/">blog</a></li>
+    <li class="menu__items"><a class="menu__url{% if page.url contains 'about' %} menu__url--current{% endif %}" href="{{ site.baseurl }}/about/">about</a></li>
+    <li class="menu__items"><a class="menu__url{% if page.url contains 'contact' %} menu__url--current{% endif %}" href="https://github.com/greendius/dim-jekyll-theme"><i class="fa fa-lg fa-github"></i></a></li>
   </ul>
+  <div class="cf"></div>
 </nav>
+<!-- 
+<div class="menu-button">Menu</div>
+<nav id="primary-nav" class="primary-nav" role="navigation">
+  <ul class="menu">
+    <li class="menu__items"><a class="menu__url" href="">Item 1</a>
+      <ul class="menu__submenu">
+        <li class="menu__items"><a class="menu__url" href="/">Sub 1 Item 1</a></li>
+        <li class="menu__items"><a class="menu__url" href="/">Sub 1 Item 2</a></li>
+        <li class="menu__items"><a class="menu__url" href="/">Sub 1 Item 3</a></li>
+      </ul>
+    </li>
+    <li class="menu__items"><a class="menu__url" href="">Item 2</a>
+      <ul class="menu__submenu">
+        <li><a href="/">Sub 1 Item 1</a></li>
+        <li><a href="/">Sub 1 Item 2</a></li>
+        <li><a href="/">Sub 1 Item 3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav> -->

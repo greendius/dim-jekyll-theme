@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Head -->
+  {% include _head.html %}
+  
+  <body id="site"{% if page.css %} class="{{ page.css }}"{% endif %}>
+
+      <!-- Site's Header -->
+      {% include _header.html %}
+
+      <!-- Site's Body -->
+      <main class="main">
+
+        <div class="grid">
+
+          <div class="content">
+
+            <div class="page-header">
+              <h1 class="page-title">{{ page.title }}</h1>
+              {% include _breadcrumbs.html %}
+            </div><!-- /.page-header -->
+
+            {{ content }}
+
+          </div><!-- /.content -->
+
+        </div><!-- /.grid -->
+
+      </main>
+
+      <!-- Site's Footer -->
+      {% include _footer.html %}
+
+    <!-- Javascript -->
+    {% include _bottom.html %}
+
+  </body>
+</html>

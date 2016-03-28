@@ -6,7 +6,7 @@ title: Right sidebar layout
 description:
 
 image:
-  feature: usa-skyline.jpg
+  feature: img-hero.jpg
   credit:
   creditlink:
 

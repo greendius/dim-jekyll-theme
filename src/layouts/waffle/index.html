@@ -1,0 +1,46 @@
+---
+layout: archive
+css:
+
+title: "Waffle layout"
+description:
+
+image:
+  feature:
+  credit:
+  creditlink:
+
+categories: [layouts]
+tags: [layouts]
+---
+
+<div class="l-col l-col-3">
+
+  {% for entry in site.posts %}
+    <div class="col">
+
+      <a href="{{ entry.url }}" title="{{ entry.title }}">
+
+        <div class="card">
+          <div class="card-img">
+            {% if entry.image.feature %}
+              <img src="{{ site.baseurl }}/img/{{ entry.image.feature }}" />
+            {% else %}
+              <img src="{{ site.baseurl }}/img/alien-planet.jpg" />
+            {% endif %}
+          </div>
+
+          <div class="card-content">
+            <h5 class="card__title">{{ entry.title }}</h5>
+            <p class="card__date">{{ entry.date | date: "%-d %B %Y" }}</p>
+            <p class="card__excerpt">{{ entry.excerpt | remove: '<p>' | remove: '</p>' | strip_html | truncatewords: 15 }}</p>
+            <!-- <p class="card__excerpt">{{ post.content | strip_html | truncatewords: 15 }}</p> -->
+          </div>
+        </div><!-- /.card -->
+      </a>
+
+    </div><!-- /.col -->
+  {% endfor %}
+
+</div><!-- /.col -->
+
